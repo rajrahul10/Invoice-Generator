@@ -1,10 +1,12 @@
-import React from "react";
+import { createContext } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 
+export const context = createContext();
+
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <context.Provider value={{ isDarkMode: true }}>
     <App />
-  </React.StrictMode>
+  </context.Provider>
 );

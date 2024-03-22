@@ -5,7 +5,7 @@ function InvoiceDetailedView() {
 
   return (
     <div>
-      <button onClick={() => navigate("/")}>Back</button>
+      <button onClick={() => navigate("/")}>Go Back</button>
       <h2>Invoice Detailed View</h2>
     </div>
   );
